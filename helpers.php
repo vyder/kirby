@@ -42,7 +42,7 @@ function css($url, $media = null) {
 
   return html::tag('link', null, array(
     'rel'   => 'stylesheet',
-    'href'  => url($url) . "?v=" . time(),
+    'href'  => url($url) . "?" . time(),
     'media' => $media
   ));
 
